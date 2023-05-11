@@ -1,6 +1,6 @@
 # regex
 
-Introductory paragraph (replace this with your text)
+A regex, or a regular expression, is a specific sequence of characters that specifies a search pattern in text. The most commonly used search patterns are string-searching or algorithms that find operations in strings which is used in input validation. Regex techniques were developed in theoretical computer science and formal language theory. When you see regex it help to look for common ground to recognize it for example (/^(-----+)@([/-------]+).([-----]{---})$/.)
 
 ## Summary
 
