@@ -23,6 +23,11 @@ The regex I will be covering is one that matches majority of email addresses. Wh
   - [Author](#author)
 
 ## Regex Components
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` let break it down into segments to understand it.
+
+([a-z0-9_\.-]+) this means that this part of the segment will have either a (a-z) lower or (A-Z) upper case letter a number from 0-9 and allow (_/.-) special character. The (+) means you can have infinite amount of characters
+
+([\da-z\.-]+) (\d) character class matches with a single character
 
 ### Anchors
 
