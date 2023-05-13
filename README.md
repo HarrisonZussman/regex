@@ -27,7 +27,7 @@ The regex I will be covering is one that matches majority of email addresses. Wh
 
 Part 1 ([a-z0-9_\.-]+) this means that this part of the segment will have either a (a-z) lower or (A-Z) upper case letter a number from 0-9 and allow (_/.-) special character. The (+) means you can have infinite amount of characters
 
-Part 2 ([\da-z\.-]+) (\d) character class matches with a single character. Validates the domain address for the email is valid.
+Part 2 ([\da-z\.-]+)  Validates the domain address for the email is valid.
 
 Part 3 ([a-z\.]{2,6}) confirms that the email address extension is valid. The most common ones are .org, .gov, .com and .net. The international email addresses can end with .ca and .uk for an example
 
@@ -49,12 +49,21 @@ Bracket expressions are used to define which characters will be matched within a
 
 ### Character Classes
 
+(\d) character class matches with a single character.
+
 ### The OR Operator
+
+It will match the expression on regex before or after the / and can be used within a group or for an entire expression to help the computer understand the beginning and the ending
 
 ### Flags
 
+For advanced searched flags are used. For an example after the (/) is (^) and before the (/) is ($). It is used to encase the expression without breaking it across multiple lines.
+
 ### Character Escapes
+
+In a regex you will see a backslash that precedes a literal character. Examples are \w or \s.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Just a Web Devleopment Coding Boot Camp student
+Github:
