@@ -41,7 +41,11 @@ At the end of the regex where it say {2,6} means the characters is between 2 and
 
 ### Grouping Constructs
 
+Grouping can be used if needed to isolate a part of the string and to a back reference or to replace part of a string. 
+
 ### Bracket Expressions
+
+Bracket expressions are used to define which characters will be matched within a regex. An example from the regex being used in this email regex is below. ([a-zA-Z.]{2,6})$/
 
 ### Character Classes
 
