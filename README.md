@@ -37,6 +37,8 @@ The anchors used in an email address validation regex are the ^ and $. (^) start
 
 ### Quantifiers
 
+At the end of the regex where it say {2,6} means the characters is between 2 and 6. That allows .com and .uk to work but .c and .abcdefghijklmnpoqrstuvwxyz not to work
+
 ### Grouping Constructs
 
 ### Bracket Expressions
