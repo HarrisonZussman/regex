@@ -25,11 +25,15 @@ The regex I will be covering is one that matches majority of email addresses. Wh
 ## Regex Components
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` let break it down into segments to understand it.
 
-([a-z0-9_\.-]+) this means that this part of the segment will have either a (a-z) lower or (A-Z) upper case letter a number from 0-9 and allow (_/.-) special character. The (+) means you can have infinite amount of characters
+Part 1 ([a-z0-9_\.-]+) this means that this part of the segment will have either a (a-z) lower or (A-Z) upper case letter a number from 0-9 and allow (_/.-) special character. The (+) means you can have infinite amount of characters
 
-([\da-z\.-]+) (\d) character class matches with a single character
+Part 2 ([\da-z\.-]+) (\d) character class matches with a single character. Validates the domain address for the email is valid.
+
+Part 3 ([a-z\.]{2,6}) confirms that the email address extension is valid. The most common ones are .org, .gov, .com and .net. The international email addresses can end with .ca and .uk for an example
 
 ### Anchors
+
+The anchors used in an email address validation regex are the ^ and $. (^) start it and ($) ends it.
 
 ### Quantifiers
 
